@@ -1,0 +1,16 @@
+// colors 
+$dark: #0f0f0f;
+$dark-transparent: rgba(0,0,0, .5);
+$light-transparent: rgba(255,255,255, .3);
+$purple: #5F0F40;
+$orange: #E55812;
+$purp-orng-gradient: linear-gradient(45deg, $purple, $orange);
+$blue: #084887;
+$green: #56BF00;
+$red: #D33115;
+
+// bp sizes
+$bp-tiny: 650px;
+$bp-sml: 750px;
+$bp-mdm: 1000px;
+$bp-lrg: 1200px;

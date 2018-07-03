@@ -1,0 +1,28 @@
+@mixin bp-tiny ($minOrMax: "min") {
+	@media screen and (#{$minOrMax}-width: $bp-tiny) {
+		@content;
+	}
+}
+
+@mixin bp-sml ($minOrMax: "min") {
+	@media screen and (#{$minOrMax}-width: $bp-sml) {
+		@content;
+	}
+}
+
+@mixin bp-mdm ($minOrMax: "min") {
+	@media screen and (#{$minOrMax}-width: $bp-mdm) {
+		@content;
+	}
+}
+
+@mixin bp-lrg ($minOrMax: "min") {
+	@media screen and (#{$minOrMax}-width: $bp-lrg) {
+		@content;
+	}
+}
+
+@mixin transition($effect: all, $time: 300ms, $easing: ease-in-out) {
+	transition: $effect $time $easing;
+}
+

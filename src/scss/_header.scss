@@ -1,0 +1,27 @@
+.header {
+	position: sticky;
+    top: 0;
+	z-index: 100;
+	background-color: $dark;
+	&.shadow {
+		@include transition;
+		background-color: $dark-transparent;
+		&:hover { background-color: $dark; }
+	}
+}
+.header__logo {
+	position: relative;
+	z-index: 90;
+	padding: .5em;
+	font-size: 22px;
+	text-align: center;
+	color: white;
+	font-weight: 700;
+	font-family: 'Rubik', sans-serif;
+	@include bp-sml() {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0;
+	}
+}
