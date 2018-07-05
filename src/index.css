@@ -138,3 +138,356 @@ hr {
   @media screen and (min-width: 1000px) {
     .nav__link {
       font-size: 16px; } }
+
+.content__section--me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background: linear-gradient(45deg, #5F0F40, #E55812); }
+
+.content__section--skills {
+  min-height: 300px;
+  background: linear-gradient(45deg, #5F0F40, #E55812); }
+
+.content__section--education {
+  min-height: 300px; }
+
+.content__section--expereince {
+  min-height: 300px; }
+
+.content__section--portfolio {
+  min-height: 300px; }
+
+.content__section--contact {
+  min-height: 300px; }
+
+.content__section__title {
+  color: white;
+  background-color: #0f0f0f;
+  font-weight: 500;
+  padding: 0 .5em;
+  letter-spacing: 1.5px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2em;
+  text-align: center; }
+  @media screen and (min-width: 650px) {
+    .content__section__title {
+      text-align: left;
+      font-size: 1.75em; } }
+  @media screen and (min-width: 750px) {
+    .content__section__title {
+      font-size: 2em; } }
+
+.content__container {
+  max-width: 300px; }
+  @media screen and (min-width: 650px) {
+    .content__container {
+      min-width: 300px;
+      max-width: 900px;
+      max-height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; } }
+
+.content__container--skills {
+  padding: 1em; }
+
+.content__container--education, .content__container--expereince, .content__container--portfolio, .content__container--contact {
+  padding: 2em;
+  background: linear-gradient(45deg, #5F0F40, #E55812); }
+
+@media screen and (min-width: 650px) {
+  .content__item {
+    height: 300px; } }
+
+.content__item--me {
+  background-color: white;
+  flex-grow: 1; }
+  .content__item--me h1 {
+    color: white;
+    background-color: #0f0f0f;
+    font-weight: 500;
+    padding: 0 .5em;
+    letter-spacing: 1.5px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    text-align: center; }
+    @media screen and (min-width: 650px) {
+      .content__item--me h1 {
+        text-align: left;
+        font-size: 1.75em; } }
+    @media screen and (min-width: 750px) {
+      .content__item--me h1 {
+        font-size: 2em; } }
+  .content__item--me .occupation {
+    color: #5F0F40;
+    font-weight: 700;
+    font-size: 18px; }
+
+@media screen and (min-width: 650px) {
+  .content__item--me__img {
+    flex-grow: 1; } }
+
+.content__item--me__text {
+  padding: 1em; }
+  .content__item--me__text p {
+    padding: .5em;
+    text-align: center; }
+    @media screen and (min-width: 650px) {
+      .content__item--me__text p {
+        text-align: left; } }
+  .content__item--me__text ul {
+    padding: .5em;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center; }
+    @media screen and (min-width: 650px) {
+      .content__item--me__text ul {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start; } }
+    .content__item--me__text ul li {
+      padding: .5em;
+      text-align: center; }
+      .content__item--me__text ul li h4 {
+        margin-bottom: .2em; }
+      .content__item--me__text ul li p {
+        font-size: 10px; }
+
+.content__item--skills {
+  padding: 1em;
+  list-style: none; }
+  .content__item--skills li:first-child h3 {
+    padding: 1em;
+    background-color: #0f0f0f;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px; }
+  .content__item--skills li:not(:nth-child(1)) {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    background-color: white;
+    padding: .5em;
+    margin: .5em auto;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700; }
+    .content__item--skills li:not(:nth-child(1)):nth-child(odd) {
+      border-left: 6px solid #E55812; }
+    .content__item--skills li:not(:nth-child(1)):nth-child(even) {
+      border-left: 6px solid #5F0F40; }
+
+.content__img {
+  display: block;
+  max-width: 300px;
+  vertical-align: center;
+  border: 0; }
+  @media screen and (min-width: 650px) {
+    .content__img {
+      width: 300px;
+      height: 300px; } }
+
+.social-media a {
+  margin: 0 .2em; }
+
+.facebook {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #51609C;
+  border-radius: 50%; }
+
+.codepen {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #0f0f0f;
+  border-radius: 50%; }
+
+.github {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #0f0f0f;
+  border-radius: 50%; }
+
+.linkedin {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #0077B5;
+  border-radius: 50%; }
+
+.skill__tag--ok {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  background-color: #D33115;
+  color: white; }
+  .skill__tag--ok:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-right: 10px solid #D33115;
+    border-bottom: 22px solid transparent; }
+
+.skill__tag--good {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  background-color: #56BF00;
+  color: white; }
+  .skill__tag--good:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-right: 10px solid #56BF00;
+    border-bottom: 22px solid transparent; }
+
+.skill__tag--learning {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .5em;
+  background-color: #084887;
+  color: white; }
+  .skill__tag--learning:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-right: 10px solid #084887;
+    border-bottom: 22px solid transparent; }
+
+.skill__legend {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center; }
+  @media screen and (min-width: 650px) {
+    .skill__legend {
+      justify-content: center; } }
+  .skill__legend span {
+    padding: .5em 1.5em;
+    margin-top: 5px;
+    color: white; }
+    .skill__legend span:first-child {
+      background-color: #084887; }
+    .skill__legend span:nth-child(2) {
+      background-color: #D33115; }
+    .skill__legend span:nth-child(3) {
+      background: #56BF00; }
+    @media screen and (min-width: 650px) {
+      .skill__legend span {
+        margin: 1em 5px;
+        vertical-align: middle; } }
+
+.display__item {
+  background-color: white;
+  padding: .5em;
+  max-width: 700px;
+  min-width: 250px;
+  margin: 0 auto; }
+  .display__item:nth-child(odd) {
+    border-left: 6px solid #E55812; }
+  .display__item:nth-child(even) {
+    border-left: 6px solid #5F0F40; }
+  .display__item:not(:nth-child(1)) {
+    margin-top: 1em; }
+
+.display__status {
+  font-weight: bolder;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f0f0f; }
+
+.display__source {
+  display: block;
+  font-weight: 700;
+  color: #5F0F40; }
+
+.display__date {
+  font-size: 10px;
+  color: #E55812; }
+
+.display__cert {
+  color: #0f0f0f; }
+
+.display__cert__list {
+  padding-left: 1em; }
+
+.display__cert__link {
+  color: #E55812;
+  transition: color 200ms ease-in-out; }
+  .display__cert__link:hover {
+    color: #5F0F40; }
+
+.display__text {
+  padding: .5em 2em; }
+
+.display__list {
+  padding: 1em 3em; }
+
+.panel--title {
+  font-weight: 700;
+  color: #0f0f0f;
+  margin: 0; }
+
+.panel--author {
+  font-size: 12px;
+  color: #E55812; }
+
+.btn-purple {
+  background-color: #5F0F40;
+  border-color: #5F0F40; }
+
+.form {
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start; }
+
+.form__field {
+  width: 100%; }
+
+@media screen and (min-width: 1200px) {
+  .panel__grid {
+    justify-content: center; } }

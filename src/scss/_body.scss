@@ -1,0 +1,374 @@
+.content__section {
+
+}
+.content__section--me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	background: $purp-orng-gradient;
+}
+.content__section--skills {
+	min-height: 300px;
+	background: $purp-orng-gradient;
+}
+.content__section--education {
+	min-height: 300px;
+}
+.content__section--expereince {
+	min-height: 300px;
+}
+.content__section--portfolio {
+	min-height: 300px;
+}
+.content__section--contact {
+	min-height: 300px;
+}
+.content__section__title {
+	color: white;
+	background-color: $dark;
+	font-weight: 500;
+	padding: 0 .5em;
+	letter-spacing: 1.5px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 2em;
+	text-align: center;
+	@include bp-tiny() {
+		text-align: left;
+		font-size: 1.75em;
+	}
+	@include bp-sml {
+		font-size: 2em;
+	}
+}
+.content__container {
+	max-width: 300px;
+	@include bp-tiny() {
+		min-width: 300px;
+		max-width: 900px;
+		max-height: 300px;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+	}
+}
+.content__container--skills {
+	padding: 1em;
+}
+
+.content__container {
+	&--education, 
+	&--expereince, 
+	&--portfolio, 
+	&--contact {
+		padding: 2em;
+	background: $purp-orng-gradient;
+	}
+}
+.content__item {
+	@include bp-tiny () {
+		height: 300px;
+	}
+}
+.content__item--me {
+	background-color: white;
+	flex-grow: 1;
+	h1 {
+		color: white;
+		background-color: $dark;
+		font-weight: 500;
+		padding: 0 .5em;
+		letter-spacing: 1.5px;
+		font-family: 'Rubik', sans-serif;
+		font-size: 2em;
+		text-align: center;
+		@include bp-tiny() {
+			text-align: left;
+			font-size: 1.75em;
+		}
+		@include bp-sml {
+			font-size: 2em;
+		}
+	}
+	.occupation {
+		color: $purple;
+		font-weight: 700;
+		font-size: 18px;
+	}
+}
+.content__item--me__img {
+	@include bp_tiny {
+		flex-grow: 1;
+	}
+}
+.content__item--me__text {
+	padding: 1em;
+	p {
+		padding: .5em;
+		text-align: center;
+		@include bp-tiny {
+			text-align: left;
+		}
+	}
+	ul {	
+		padding: .5em;
+		list-style: none;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		@include bp-tiny {
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+		
+		li {
+			padding: .5em;
+			text-align: center;
+			h4 {
+				margin-bottom: .2em;
+			}
+			p {
+				font-size: 10px;
+			}
+		}
+	}
+}
+.content__item--skills {
+	padding: 1em;
+	list-style: none;
+	// background: $dark-transparent;
+	li:first-child {
+		h3 {
+			padding: 1em;
+			background-color: $dark;
+			color: white;
+			font-weight: 700;
+			letter-spacing: 2px;
+		}
+	}
+	li:not(:nth-child(1)) {
+		position: relative;
+		margin: 0 auto;
+		width: 90%;
+		background-color: white;
+		padding: .5em;
+		margin: .5em auto;
+		font-family: "Rubik", sans-serif;
+		font-weight: 700;
+		&:nth-child(odd) {
+			border-left: 6px solid $orange;
+		}
+		&:nth-child(even) {
+			border-left: 6px solid $purple;
+		}
+	}
+}
+.content__img {
+	display: block;
+	max-width: 300px;
+	vertical-align: center;
+	border: 0;
+	@include bp-tiny() {
+		width: 300px;
+		height: 300px;
+	}
+}
+
+.social-media {
+	a {
+        margin: 0 .2em;
+    }
+}
+.facebook {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	height: 40px;
+	width: 40px;
+	color: white;
+	background-color: #51609C;
+	border-radius: 50%;
+}
+.codepen {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	height: 40px;
+	width: 40px;
+	color: white;
+	background-color: $dark;
+	border-radius: 50%;
+}
+.github {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	height: 40px;
+	width: 40px;
+	color: white;
+	background-color: $dark;
+	border-radius: 50%;
+}
+
+.linkedin {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+	height: 40px;
+	width: 40px;
+	color: white;
+	background-color: #0077B5;
+	border-radius: 50%;
+}
+
+@mixin skillTag($color) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: .5em;
+	background-color: $color;
+	color: white;
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: -10px;
+		width: 0;
+		height: 0;
+		border-top: 21px solid transparent;
+		border-right: 10px solid $color;
+		border-bottom:22px solid transparent;
+	}
+}
+
+.skill__tag--ok {
+	@include skillTag($red);
+}
+.skill__tag--good {@include skillTag($green);}
+.skill__tag--learning {@include skillTag($blue);}
+.skill__legend {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	@include bp-tiny {
+		justify-content: center;
+	}
+	span {
+		padding: .5em 1.5em;
+		margin-top: 5px;
+		color: white;
+		&:first-child { background-color: $blue;}
+		&:nth-child(2) { background-color: $red;}
+		&:nth-child(3) { background: $green;}
+		
+		@include bp-tiny {
+			margin: 1em 5px;
+			vertical-align: middle;
+		}
+	}
+}
+
+.display__item {
+	background-color: white;
+	padding: .5em;
+	max-width: 700px;
+	min-width: 250px;
+	margin: 0 auto;
+	&:nth-child(odd) {
+		border-left: 6px solid $orange;
+	}
+	&:nth-child(even) {
+		border-left: 6px solid $purple;
+	}
+	&:not(:nth-child(1)) {
+		margin-top: 1em;
+	}
+}
+.display__status {
+	font-weight: bolder;
+	font-size: 18px;
+	font-weight: 700;
+	color: $dark;
+}
+.display__details {}
+.display__source {
+	display: block;
+	font-weight: 700;
+	color: $purple;
+
+}
+.display__date {
+	font-size: 10px;
+	color: $orange;
+}
+.display__cert {
+	color: $dark;
+}
+.display__cert__list {
+	padding-left: 1em;
+}
+.display__cert__link {
+	color: $orange;
+	@include transition(color, 200ms);
+	&:hover {
+		color: $purple;
+	}
+}
+
+.display__text {
+	padding: .5em 2em;
+}
+
+.display__list {
+	padding: 1em 3em;
+}
+
+.panel--basic {
+	
+}
+
+.panel--title {
+	font-weight: 700;
+	color: $dark;
+	margin: 0;
+}
+
+.panel--author {
+	font-size: 12px;
+	color: $orange
+}
+
+.btn-purple {
+	background-color: $purple;
+	border-color: $purple;
+}
+
+.form  {
+	padding: 0;
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.form__field {
+	width: 100%;
+}
+
+
+
+.panel__grid {
+	@include bp-lrg {
+		justify-content: center;
+	}
+}
