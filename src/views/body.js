@@ -157,15 +157,15 @@ const Skills = props => {
         <aside className="grid__column--12 skill__legend">
           <span>
             <i className="fas fa-flask"></i>
-            Learning
+            &nbsp;Learning
           </span>
           <span>
             <i className="far fa-meh"></i>
-            Ok
+            &nbsp;Ok
           </span>
           <span>
             <i className="far fa-smile"></i>
-            Good
+            &nbsp;Good
           </span>
         </aside>
       </div>
